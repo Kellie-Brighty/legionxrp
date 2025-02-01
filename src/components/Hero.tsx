@@ -25,7 +25,6 @@ const Hero = () => {
       >
         <Logo className="w-28 h-28 mx-auto mb-12 mt-12" />
 
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -76,17 +75,19 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex items-center justify-center gap-4 flex-wrap"
+          className="flex items-center justify-center gap-4 flex-wrap mb-6"
         >
           <span className="text-gray-400">TOKEN ISSUER</span>
           <code className="text-gray-300 bg-[#171616]/50 px-3 py-1 rounded">
-            000000000000000000000
+            rHqW82n6KkBr6Utt7ktC2VVSw6tF3Nw8HK
           </code>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() =>
-              navigator.clipboard.writeText("000000000000000000000")
+              navigator.clipboard.writeText(
+                "rHqW82n6KkBr6Utt7ktC2VVSw6tF3Nw8HK"
+              )
             }
             className="bg-legion-gold/20 hover:bg-legion-gold/30 text-legion-gold px-4 py-2 rounded-lg flex items-center gap-2 transition-colors"
           >
@@ -102,6 +103,54 @@ const Hero = () => {
             </svg>
           </motion.button>
         </motion.div>
+
+        {/* FirstLedger Button */}
+        <motion.a
+          href="https://firstledger.net/token/rHqW82n6KkBr6Utt7ktC2VVSw6tF3Nw8HK/4C4547494F4E0000000000000000000000000000"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="inline-flex items-center gap-2 bg-legion-gold text-[#fff] px-6 py-3 rounded-lg font-bold text-lg hover:bg-legion-gold/90 transition-colors"
+        >
+          View on FirstLedger
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+          </svg>
+        </motion.a>
+
+        {/* Dexscreener Button */}
+        <motion.a
+          href="https://dexscreener.com/xrp/rHqW82n6KkBr6Utt7ktC2VVSw6tF3Nw8HK"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="inline-flex items-center gap-2 bg-legion-gold text-[#fff] px-6 py-3 rounded-lg font-bold text-lg hover:bg-legion-gold/90 transition-colors"
+        >
+          View on Dexscreener
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+          </svg>
+        </motion.a>
       </motion.div>
     </section>
   );
