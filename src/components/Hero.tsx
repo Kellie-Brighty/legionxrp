@@ -130,7 +130,7 @@ const Hero = () => {
 
         {/* Dexscreener Button */}
         <motion.a
-          href="https://dexscreener.com/xrp/rHqW82n6KkBr6Utt7ktC2VVSw6tF3Nw8HK"
+          href="https://dexscreener.com/xrpl/4c4547494f4e0000000000000000000000000000.rhqw82n6kkbr6utt7ktc2vvsw6tf3nw8hk_xrp"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 20 }}
